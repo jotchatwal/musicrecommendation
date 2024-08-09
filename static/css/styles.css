@@ -1,0 +1,151 @@
+/* Reset some default styles */
+body, h2, form, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen background with a GIF */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Container for the login form */
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+/* Styling the form elements */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #0056b3;
+}
+
+/* Falling music notes animation */
+.note-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.note {
+    position: absolute;
+    font-size: 24px;
+    animation: fall linear infinite;
+    color: white;
+    opacity: 0.8;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        transform: rotate(0deg);
+        opacity: 0.8;
+    }
+    100% {
+        top: 110%;
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Randomly place and animate the music notes */
+.note:nth-child(1) {
+    left: 10%;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+
+.note:nth-child(2) {
+    left: 20%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.note:nth-child(3) {
+    left: 30%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.note:nth-child(4) {
+    left: 40%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+.note:nth-child(5) {
+    left: 50%;
+    animation-duration: 8s;
+    animation-delay: 4s;
+}
+
+.note:nth-child(6) {
+    left: 60%;
+    animation-duration: 7s;
+    animation-delay: 5s;
+}
+
+.note:nth-child(7) {
+    left: 70%;
+    animation-duration: 6s;
+    animation-delay: 6s;
+}
+
+.note:nth-child(8) {
+    left: 80%;
+    animation-duration: 9s;
+    animation-delay: 7s;
+}
+
+.note:nth-child(9) {
+    left: 90%;
+    animation-duration: 5s;
+    animation-delay: 8s;
+}
